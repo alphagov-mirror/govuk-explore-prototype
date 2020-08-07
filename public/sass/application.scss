@@ -18,3 +18,38 @@ $govuk-assets-path: '/govuk/assets/';
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+.app-c-inverse-header {
+  width: 100%;
+  background-color: govuk-colour("blue");
+  color: govuk-colour("white");
+  margin-bottom: govuk-spacing(6);
+  padding: 0 govuk-spacing(6) govuk-spacing(6);
+  box-sizing: border-box;
+}
+
+.app-c-inverse-header a {
+  color: govuk-colour("white");
+}
+
+.app-c-inverse-header--full-width {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: govuk-spacing(3);
+}
+
+.app-c-inverse-header--padding-top {
+  padding-top: govuk-spacing(3);
+}
+
+.app-c-title--inverse {
+  color: govuk-colour("white");
+
+  .app-c-title__text,
+  .app-c-title__context {
+    color: inherit;
+  }
+}
+
+.app-c-lead-paragraph--inverse {
+  color: govuk-colour("white");
+}

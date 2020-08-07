@@ -10,22 +10,30 @@
 
 {% block content %}
 
+      <header class=" app-c-inverse-header app-c-inverse-header--full-width app-c-inverse-header--padding-top">
+        <h1 class="govuk-heading-xl app-c-title--inverse">
+          {{ title }}
+        </h1>
+
+        <p class="govuk-body-l app-c-lead-paragraph--inverse">{{ description }}</p>
+
+        <h2 class="govuk-heading-l app-c-title--inverse">Featured links</h2>
+        <ol class="govuk-list govuk-list--bullet app-c-list-inverse">
+        {% for feature in featured %}
+          <li><a href="{{feature.link}}" class="govuk-link">{{feature.title}}</a></li>
+        {% endfor %}
+        </ol>
+
+      </header>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
-        {{ topicSlug }}
-      </h1>
-
-      <p>This is a paragraph of text. It explains in more detail what has happened and wraps across several lines.</p>
-
-      <p>This paragraph has a link to <a href="/url/of/onward/page">find out more about this subject</a>.</p>
 
       {% set topicsHtml %}
-      {{ govukAccordion({
-        id: "accordion-default",
-        items: topics
-      }) }}
+        {% for topic in subtopics %}
+          <h2 class="govuk-heading-l">{{ topic.title }}</h2>
+          {{ govukAccordion(topic.subtopic_sections) }}
+        {% endfor %}
       {% endset -%}
 
       {% set governmentHtml %}
