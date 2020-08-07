@@ -19,7 +19,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 .app-c-inverse-header {
-  width: 100%;
+  width: 110%;
   background-color: govuk-colour("blue");
   color: govuk-colour("white");
   margin-bottom: govuk-spacing(6);
@@ -32,9 +32,11 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .app-c-inverse-header--full-width {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: govuk-spacing(3);
+  padding-right: govuk-spacing(3);
   padding-bottom: govuk-spacing(3);
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .app-c-inverse-header--padding-top {
@@ -52,4 +54,24 @@ $govuk-assets-path: '/govuk/assets/';
 
 .app-c-lead-paragraph--inverse {
   color: govuk-colour("white");
+}
+
+.app-c-list-inverse {
+  color: govuk-colour("white");
+
+  .govuk-link{
+    color: inherit;
+  }
+}
+
+.app-c-back-link-inverse {
+  width: 110%;
+  background-color: govuk-colour("blue");
+  margin-bottom: govuk-spacing(6);
+  padding: 0 govuk-spacing(6) govuk-spacing(6);
+  box-sizing: border-box;
+
+  .govuk-back-link {
+    color: govuk-colour("white");
+  }
 }
