@@ -40,7 +40,10 @@
 
       {% set governmentHtml %}
       <h2 class="govuk-heading-l">Latest news</h2>
-      <p class="govuk-body">News and communications about visas and immigration</p>
+      <p class="govuk-body-l">News and communications about {{ title.toLowerCase() }}</p>
+      <image src="{{latest_news.image_url}}" alt="{{latest_news.title}}" />
+      <h3><a href="{{ latest_news.url}}">{{latest_news.title}}</a></h3>
+      <p class="govuk-body">{{ latest_news.description }}</p>
 
       {% endset -%}
 

@@ -67,11 +67,22 @@ $govuk-assets-path: '/govuk/assets/';
 .app-c-back-link-inverse {
   width: 110%;
   background-color: govuk-colour("blue");
-  margin-bottom: govuk-spacing(6);
-  padding: 0 govuk-spacing(6) govuk-spacing(6);
+  padding: 0 govuk-spacing(3) govuk-spacing(3);
   box-sizing: border-box;
+  border-color: govuk-colour("white");
+  margin-top: -15px;
+  margin-bottom: 0;
+  margin-left: -15px;
+  margin-right: -15px;
 
   .govuk-back-link {
     color: govuk-colour("white");
+    :before {
+      border-color: govuk-colour("white");
+    }
   }
+}
+
+.govuk-main-wrapper {
+  padding-top: 0;
 }
