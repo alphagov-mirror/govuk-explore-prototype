@@ -41,10 +41,25 @@
       {% set governmentHtml %}
       <h2 class="govuk-heading-l">Latest news</h2>
       <p class="govuk-body-l">News and communications about {{ title.toLowerCase() }}</p>
-      <image src="{{latest_news.image_url}}" alt="{{latest_news.title}}" />
-      <h3><a href="{{ latest_news.url}}">{{latest_news.title}}</a></h3>
-      <p class="govuk-body">{{ latest_news.description }}</p>
 
+      <a href="{{ latest_news.url}}"><image src="{{latest_news.image_url}}" alt="{{latest_news.title}}" />
+      <h3>{{latest_news.title}}</h3></a>
+      <p class="govuk-body govuk-!-margin-bottom-6">{{ latest_news.description }}</p>
+
+      <p class="govuk-body govuk-!-margin-bottom-9">
+        <a href="/search/news-and-communications?filter_part_of_taxonomy_tree=dded88e2-f92e-424f-b73e-6ad24a839c51">See all news</a>
+      </p>
+
+      <div class="govuk-footer pad-stuff">
+        <h2 class="govuk-heading-l">Publications</h2>
+        <p class="govuk-body-l">Regulation, research, policy and data in this topic</p>
+        <p class=govuk-body>
+          <a href="/search/news-and-communications?filter_part_of_taxonomy_tree=dded88e2-f92e-424f-b73e-6ad24a839c51">Policy papers and consultations</a>
+        </p>
+        <p class=govuk-body>
+          <a href="/search/news-and-communications?filter_part_of_taxonomy_tree=dded88e2-f92e-424f-b73e-6ad24a839c51">Guidance and regulation</a>
+        </p>
+      </div>
       {% endset -%}
 
 
