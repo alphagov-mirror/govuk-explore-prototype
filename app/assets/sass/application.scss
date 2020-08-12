@@ -152,7 +152,7 @@ $govuk-assets-path: '/govuk/assets/';
 .app-c-back-link-inverse {
   width: 100%;
   background-color: govuk-colour("blue");
-  padding: 0 govuk-spacing(3) govuk-spacing(3);
+  padding: 0 govuk-spacing(3) 0;
   border-color: govuk-colour("white");
   margin-top: -10px;
   margin-bottom: 0;
@@ -172,133 +172,8 @@ $govuk-assets-path: '/govuk/assets/';
 //   padding: govuk-spacing(3);
 // }
 
-.govuk-header__container {
-  margin: 0
-}
-
-
-// Mia's stuff
-
-// .topic-head {
-// }
-//
-// .lede {
-//   font-size: 22px;
-//   margin-bottom: 35px;
-// }
-//
-// .page-heading {
-//   margin-bottom: 5px;
-// }
-// .govuk-tabs {
-//   margin-top: -79px;
-// }
-//
-// .js-enabled .govuk-tabs__list,.js-enabled .govuk-tabs__list-item--selected {
-//   border: none;
-// }
-//
-// .js-enabled .govuk-tabs__panel {
-//   border: none;
-//   padding-left: 0;
-//   padding-right: 0;
-// }
-//
-// /* Feature links */
-// .feature-links {
-//   display: block;
-//   padding-bottom: 50px;
-//   padding-left: 30px;
-//   list-style-image: url('/public/images/arrow.svg');
-// }
-//
-// .feature-links li {
-//   padding-bottom: 20px;
-// }
-//
-// /* Topic tabs */
-// .sub-topics {
-//   margin-bottom: -20px;
-// }
-//
-// /* Tab padding - making accordions appear full width */
-// .js-enabled .govuk-accordion__section-header {
-//   margin-left: -15px;
-//   margin-right: -15px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
-//
-// .js-enabled .govuk-accordion {
-//     border-bottom: 1px solid #b1b4b6;
-//     margin-left: -15px;
-//     margin-right: -15px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
-//
-// /* Accordion styles */
-// .js-enabled .govuk-accordion a {
-//   text-decoration: none;
-// }
-//
-// .govuk-heading-l {
-//   margin-bottom: 15px;
-// }
-// /* Government activity section */
-// .publications {
-//   margin-left: -15px;
-//   margin-right: -15px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   padding-top: 35px;
-// }
-//
-// /* Wrapping sub-topics headings 2/3rds, so that it sits in line with 'open all' */
-// .sub-topics {
-//   max-width: 80%;
-//   margin-bottom: -18px;
-// }
-//
-// /* Accordion */
-// .js-enabled .govuk-accordion {
-//   margin-bottom: 80px;
-// }
-//
-// .js-enabled .govuk-accordion__open-all {
-//   margin-bottom: 20px;
-// }
-//
-// .js-enabled .govuk-accordion__section-button {
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-// }
-//
-// /* Images */
-// img {
-//   width:100%;
-// }
-//
-// /* lists */
-// .govuk-list li {
-//   // color: red;
-//   padding-bottom: 20px;
-// }
-// /* //// */
-//
-// /* Topic tags */
-// .topic-tags ul {
-//   padding-left: 0;
-//   font-family: "GDS Transport", Arial, sans-serif;
-// }
-//
-// .topic-tags li {
-//   display: inline-block;
-//   padding: 15px;
-//   border: 1px solid #1d70b8;
-//   border-bottom: 5px solid #1d70b8;
-//   margin-right: 15px;
-//   margin-bottom: 15px;
+// .govuk-header__container {
+//   margin: 0
 // }
 
 // Mia's stuff
@@ -364,7 +239,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 /* Feature links */
 .feature-links {
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
 
 .feature-links a {
