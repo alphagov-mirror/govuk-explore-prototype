@@ -378,3 +378,22 @@ img {
 .topic-tags a {
   text-decoration: none;
 }
+
+// Accordion icons
+
+.govuk-accordion__icon:after {
+  display: none;
+}
+
+.govuk-accordion__icon:before {
+  display: none;
+}
+
+.govuk-accordion__icon {
+  background-image: url('/public/images/chevron-down.svg');
+}
+
+.govuk-accordion__section--expanded .govuk-accordion__icon {
+  background-image: url('/public/images/chevron-up.svg');
+
+}
