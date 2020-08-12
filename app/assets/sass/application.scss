@@ -152,7 +152,7 @@ $govuk-assets-path: '/govuk/assets/';
 .app-c-back-link-inverse {
   width: 100%;
   background-color: govuk-colour("blue");
-  padding: 0 govuk-spacing(3) govuk-spacing(3);
+  padding: 0 govuk-spacing(3) 0;
   border-color: govuk-colour("white");
   margin-top: -10px;
   margin-bottom: 0;
