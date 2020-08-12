@@ -237,6 +237,10 @@ $govuk-assets-path: '/govuk/assets/';
   margin-bottom: 20px;
 }
 
+.govuk-body a {
+  text-decoration: none;
+}
+
 /* Feature links */
 .feature-links {
   padding-bottom: 35px;
@@ -322,6 +326,7 @@ $govuk-assets-path: '/govuk/assets/';
   padding-right: 15px;
   padding-top: 35px;
   padding-bottom: 35px;
+  border-top: 0;
 }
 
 /* Wrapping sub-topics headings 2/3rds, so that it sits in line with 'open all' */
@@ -372,4 +377,23 @@ img {
 
 .topic-tags a {
   text-decoration: none;
+}
+
+// Accordion icons
+
+.govuk-accordion__icon:after {
+  display: none;
+}
+
+.govuk-accordion__icon:before {
+  display: none;
+}
+
+.govuk-accordion__icon {
+  background-image: url('/public/images/chevron-down.svg');
+}
+
+.govuk-accordion__section--expanded .govuk-accordion__icon {
+  background-image: url('/public/images/chevron-up.svg');
+
 }
