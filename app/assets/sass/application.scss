@@ -168,9 +168,9 @@ $govuk-assets-path: '/govuk/assets/';
   padding-top: 0;
 }
 
-.pad-stuff {
-  padding: govuk-spacing(3);
-}
+// .pad-stuff {
+//   padding: govuk-spacing(3);
+// }
 
 .govuk-header__container {
   margin: 0
@@ -179,9 +179,152 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Mia's stuff
 
-.topic-head {
+// .topic-head {
+// }
+//
+// .lede {
+//   font-size: 22px;
+//   margin-bottom: 35px;
+// }
+//
+// .page-heading {
+//   margin-bottom: 5px;
+// }
+// .govuk-tabs {
+//   margin-top: -79px;
+// }
+//
+// .js-enabled .govuk-tabs__list,.js-enabled .govuk-tabs__list-item--selected {
+//   border: none;
+// }
+//
+// .js-enabled .govuk-tabs__panel {
+//   border: none;
+//   padding-left: 0;
+//   padding-right: 0;
+// }
+//
+// /* Feature links */
+// .feature-links {
+//   display: block;
+//   padding-bottom: 50px;
+//   padding-left: 30px;
+//   list-style-image: url('/public/images/arrow.svg');
+// }
+//
+// .feature-links li {
+//   padding-bottom: 20px;
+// }
+//
+// /* Topic tabs */
+// .sub-topics {
+//   margin-bottom: -20px;
+// }
+//
+// /* Tab padding - making accordions appear full width */
+// .js-enabled .govuk-accordion__section-header {
+//   margin-left: -15px;
+//   margin-right: -15px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
+//
+// .js-enabled .govuk-accordion {
+//     border-bottom: 1px solid #b1b4b6;
+//     margin-left: -15px;
+//     margin-right: -15px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
+//
+// /* Accordion styles */
+// .js-enabled .govuk-accordion a {
+//   text-decoration: none;
+// }
+//
+// .govuk-heading-l {
+//   margin-bottom: 15px;
+// }
+// /* Government activity section */
+// .publications {
+//   margin-left: -15px;
+//   margin-right: -15px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   padding-top: 35px;
+// }
+//
+// /* Wrapping sub-topics headings 2/3rds, so that it sits in line with 'open all' */
+// .sub-topics {
+//   max-width: 80%;
+//   margin-bottom: -18px;
+// }
+//
+// /* Accordion */
+// .js-enabled .govuk-accordion {
+//   margin-bottom: 80px;
+// }
+//
+// .js-enabled .govuk-accordion__open-all {
+//   margin-bottom: 20px;
+// }
+//
+// .js-enabled .govuk-accordion__section-button {
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+// }
+//
+// /* Images */
+// img {
+//   width:100%;
+// }
+//
+// /* lists */
+// .govuk-list li {
+//   // color: red;
+//   padding-bottom: 20px;
+// }
+// /* //// */
+//
+// /* Topic tags */
+// .topic-tags ul {
+//   padding-left: 0;
+//   font-family: "GDS Transport", Arial, sans-serif;
+// }
+//
+// .topic-tags li {
+//   display: inline-block;
+//   padding: 15px;
+//   border: 1px solid #1d70b8;
+//   border-bottom: 5px solid #1d70b8;
+//   margin-right: 15px;
+//   margin-bottom: 15px;
+// }
+
+// Mia's stuff
+
+// Header area
+.govuk-back-link {
+  background-image: url('/public/images/chevron-back.svg');
+  background-repeat: no-repeat;
+  background-position: 0px 2px;
 }
 
+.govuk-back-link[href] {
+  text-decoration: none;
+  color: white;
+}
+
+.govuk-back-link::before {
+  content: none;
+}
+
+.sub-topic-header {
+  background-color: #03579F;
+}
+.app-c-inverse-header--full-width {
+  padding-bottom: 55px;
+}
 .lede {
   font-size: 22px;
   margin-bottom: 35px;
@@ -189,9 +332,6 @@ $govuk-assets-path: '/govuk/assets/';
 
 .page-heading {
   margin-bottom: 5px;
-}
-.govuk-tabs {
-  margin-top: -79px;
 }
 
 .js-enabled .govuk-tabs__list,.js-enabled .govuk-tabs__list-item--selected {
@@ -204,21 +344,75 @@ $govuk-assets-path: '/govuk/assets/';
   padding-right: 0;
 }
 
+// Typography
+.govuk-heading-m {
+  margin-bottom: 25px;
+}
+
+.govuk-heading-xl {
+  margin-bottom: 10px;
+}
+
+.govuk-body-l {
+  margin-bottom: 45px;
+  font-size: 22px;
+}
+
+.govuk-body-m, .govuk-body, p {
+  margin-bottom: 20px;
+}
+
 /* Feature links */
 .feature-links {
-  display: block;
   padding-bottom: 50px;
-  padding-left: 30px;
-  list-style-image: url('/public/images/arrow.svg');
+}
+
+.feature-links a {
+  text-decoration: none;
 }
 
 .feature-links li {
-  padding-bottom: 20px;
+  display: block;
+  min-height: 28px;
+  padding-left: 40px;
+  padding-top: 5px;
+  background-image: url('/public/images/arrow.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: 0px 0px;
+  list-style: none;
+  margin-left: -20px;
 }
 
 /* Topic tabs */
-.sub-topics {
-  margin-bottom: -20px;
+
+// Sub-topics list
+.topics-list {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.topics-list a {
+  text-decoration: none;
+}
+
+.topic-link::after {
+    content: url('/public/images/chevron-right.svg');
+    position: absolute;
+    right: 25px;
+  }
+
+.govuk-link  {
+
+}
+// Tabs
+.govuk-tabs {
+    margin-top: -75px;
+}
+
+.govuk-tabs__list-item {
+  min-width: 80px;
 }
 
 /* Tab padding - making accordions appear full width */
@@ -242,9 +436,9 @@ $govuk-assets-path: '/govuk/assets/';
   text-decoration: none;
 }
 
-.govuk-heading-l {
-  margin-bottom: 15px;
-}
+// Accordion icons
+
+
 /* Government activity section */
 .publications {
   margin-left: -15px;
@@ -252,6 +446,7 @@ $govuk-assets-path: '/govuk/assets/';
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 /* Wrapping sub-topics headings 2/3rds, so that it sits in line with 'open all' */
@@ -279,12 +474,10 @@ img {
   width:100%;
 }
 
-/* lists */
-.govuk-list li {
-  // color: red;
+/* Accordion lists */
+.govuk-accordion li {
   padding-bottom: 20px;
 }
-/* //// */
 
 /* Topic tags */
 .topic-tags ul {
@@ -299,4 +492,9 @@ img {
   border-bottom: 5px solid #1d70b8;
   margin-right: 15px;
   margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.topic-tags a {
+  text-decoration: none;
 }
