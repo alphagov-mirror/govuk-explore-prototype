@@ -13,14 +13,14 @@
 {% block content %}
 
       <header class=" app-c-inverse-header app-c-inverse-header--full-width app-c-inverse-header--padding-top">
-        <h1 class="govuk-heading-xl app-c-title--inverse">
+        <h1 class="page-heading govuk-heading-xl app-c-title--inverse">
           {{ title }}
         </h1>
 
-        <p class="govuk-body-l app-c-lead-paragraph--inverse">{{ description }}</p>
+        <p class="lede govuk-body-l app-c-lead-paragraph--inverse">{{ description }}</p>
 
         <h2 class="govuk-heading-l app-c-title--inverse">Featured links</h2>
-        <ol class="govuk-list govuk-list--bullet app-c-list-inverse">
+        <ol class="feature-links govuk-list govuk-list--bullet app-c-list-inverse">
         {% for feature in featured %}
           <li class="govuk-!-margin-bottom-3"><a href="{{feature.link}}" class="govuk-link">{{feature.title}}</a></li>
         {% endfor %}
@@ -33,14 +33,14 @@
 
       {% set topicsHtml %}
         {% for topic in subtopics %}
-          <h2 class="govuk-heading-l">{{ topic.title }}</h2>
+          <h2 class="sub-topics govuk-heading-l">{{ topic.title }}</h2>
           {{ govukAccordion(topic.subtopic_sections) }}
         {% endfor %}
       {% endset -%}
 
       {% set governmentHtml %}
       <h2 class="govuk-heading-l">Latest news</h2>
-      <p class="govuk-body-l">News and communications about {{ title.toLowerCase() }}</p>
+      <p class="lede govuk-body-l">News and communications about {{ title.toLowerCase() }}</p>
 
       <a href="{{ latest_news.url}}"><image src="{{latest_news.image_url}}" alt="{{latest_news.title}}" />
       <h3>{{latest_news.title}}</h3></a>
@@ -52,7 +52,7 @@
 
       <div class="govuk-footer pad-stuff">
         <h2 class="govuk-heading-l">Publications</h2>
-        <p class="govuk-body-l">Regulation, research, policy and data in this topic</p>
+        <p class="lede govuk-body-l">Regulation, research, policy and data in this topic</p>
         <p class=govuk-body>
           <a href="/search/policy-papers-and-consultations?level_one_taxon=dded88e2-f92e-424f-b73e-6ad24a839c51">Policy papers and consultations</a>
         </p>
